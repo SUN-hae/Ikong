@@ -166,6 +166,16 @@ section {
   position: absolute;
   top: 40%;
   left: 50%;
+  animation: star2 2.5s linear 0.3s infinite alternate;
+}
+
+@keyframes star2 {
+  0% {
+    transform: scale(0.8) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .img_star3 {
@@ -173,6 +183,16 @@ section {
   position: absolute;
   top: 20%;
   left: 85%;
+  animation: star3 1s linear 0.3s infinite alternate;
+}
+
+@keyframes star3 {
+  0% {
+    transform: scale(0.5) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(70deg);
+  }
 }
 
 /* 첫번째 섹션 */
@@ -213,3 +233,138 @@ section {
   color: var(--text-color);
   font-weight: var(--title-weight);
 }
+/* 두번째 섹션 */
+
+.sec2 {
+  width: 1600px;
+  height: auto;
+  background-color: rgba(217, 217, 217, 0.2);
+  margin: 0 auto;
+}
+
+.sec2 .title {
+  width: 100%;
+  height: 100%;
+}
+
+.title > h2 {
+  font-size: var(--title-size);
+  font-weight: 400;
+  color: var(--title-color);
+  padding-top: 60px;
+}
+
+.title > p {
+  font-size: var(--text-size);
+  color: var(--text-color);
+  margin-top: 40px;
+  line-height: 1.5;
+}
+
+/* 슬라이드 전체 영역 - 슬라이드 + 버튼 + 페이지네이션 */
+.swiper {
+  width: 1200px;
+  height: 500px;
+  margin: 50px auto;
+  border: 1px solid salmon;
+}
+
+/* 슬라이드 영역 */
+.swiper-wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* 슬라이드 낱장 */
+.swiper-slide {
+  width: 400px;
+  height: 440px;
+  font-size: 18px;
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.slide-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slide-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* 마우스 오버 시 텍스트 나타남 */
+.slide-inner:hover .overlay-text {
+  opacity: 1;
+}
+
+/* 세번째 섹션 */
+.sec3 {
+  width: 100%;
+  height: auto;
+}
+.title_img {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.title_img > img {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.title > h2 {
+  font-size: var(--title-size);
+  font-weight: 400;
+  color: var(--title-color);
+  padding-top: 60px;
+}
+
+.title > p {
+  font-size: var(--text-size);
+  color: var(--text-color);
+  margin-top: 40px;
+  line-height: 1.5;
+}
+
+/* 프로필 */
+
+/* 네번째 섹션 */
+/* 다섯번째 섹션 */

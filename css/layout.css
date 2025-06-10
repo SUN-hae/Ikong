@@ -240,6 +240,8 @@ section {
   height: auto;
   background-color: rgba(217, 217, 217, 0.2);
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .sec2 .title {
@@ -263,10 +265,9 @@ section {
 
 /* 슬라이드 전체 영역 - 슬라이드 + 버튼 + 페이지네이션 */
 .swiper {
-  width: 1200px;
+  width: 1280px;
   height: 500px;
   margin: 50px auto;
-  border: 1px solid salmon;
 }
 
 /* 슬라이드 영역 */
@@ -282,7 +283,7 @@ section {
   height: 440px;
   font-size: 18px;
   text-align: center;
-  display: flex !important;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -297,36 +298,39 @@ section {
   height: 100%;
   overflow: hidden;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide-inner img {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
   display: block;
 }
 
 .overlay-text {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 400px;
+  height: 440px;
+  font-size: 24px;
+  background-color: rgba(136, 136, 136, 0.5);
+  color: #fff;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1.5;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
 }
 
-/* 마우스 오버 시 텍스트 나타남 */
-.slide-inner:hover .overlay-text {
+.swiper-slide:hover .overlay-text {
   opacity: 1;
+}
+
+.swiper_box {
+  position: relative;
 }
 
 /* 세번째 섹션 */
@@ -352,7 +356,7 @@ section {
 }
 .title > h2 {
   font-size: var(--title-size);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--title-color);
   padding-top: 60px;
 }
@@ -365,6 +369,12 @@ section {
 }
 
 /* 프로필 */
+.text_card {
+  width: 100%;
+}
+
+.profile {
+}
 
 /* 네번째 섹션 */
 /* 다섯번째 섹션 */

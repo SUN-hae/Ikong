@@ -338,10 +338,19 @@ section {
   width: 100%;
   height: auto;
 }
-.title_img {
-  width: 75%;
+
+.sec3 .con {
+  width: 1600px;
   height: auto;
   margin: 0 auto;
+  padding: 100px 0;
+}
+
+.title_img {
+  width: 65%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 .title_img > img {
@@ -358,23 +367,84 @@ section {
   font-size: var(--title-size);
   font-weight: 500;
   color: var(--title-color);
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .title > p {
   font-size: var(--text-size);
   color: var(--text-color);
-  margin-top: 40px;
+  margin-top: 30px;
   line-height: 1.5;
 }
 
 /* 프로필 */
 .text_card {
-  width: 100%;
+  width: 1280px;
+  height: auto;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.box {
+  width: 400px;
+  height: 120px;
+  border-radius: 20px;
+  background-color: rgba(222, 222, 222, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .profile {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  background-color: #888;
+}
+
+.text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.text h3 {
+  font-weight: var(--title-weight);
+}
+
+.icon {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.icon > img {
+  width: 12px;
+  height: 12px;
 }
 
 /* 네번째 섹션 */
+
+.sec4 {
+  width: 1600px;
+  height: auto;
+  background-color: rgba(217, 217, 217, 0.2);
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
 /* 다섯번째 섹션 */
